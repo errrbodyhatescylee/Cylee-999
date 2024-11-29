@@ -89,6 +89,12 @@ astro_patch.smd({
         menuContent += "┃   🧸 " + fancytext(cmd, 1) + "\n";
       });
     }
+
+    const loadingMessages = [
+      "Kylie is loading your menu, relax a bit 👸❤️🧸"];
+    for (const msg of loadingMessages) {
+      await context.sendMessage(context.chat, { text: msg });
+      await sleep(1000);
     
     menuContent += footer + "\n\n𝙼𝙰𝙳𝙴 𝚆𝙸𝚃𝙷 𝙻𝙾𝚅𝙴 *" + Config.botname + "*!\n©cylee\n" + readmore;
 
